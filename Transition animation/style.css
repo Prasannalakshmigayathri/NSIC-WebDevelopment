@@ -1,0 +1,38 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+}
+
+.container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.box {
+    width: 50px;
+    height: 50px;
+    background-color: #3498db;
+    position: absolute;
+    transition: 2s;
+}
+.box:hover{
+    background-color: rgb(182, 122, 222);
+    height: 250px;
+    width: 230px;
+    border-radius: 50%;
+    transition: 2s;
+}
+
+.center {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
