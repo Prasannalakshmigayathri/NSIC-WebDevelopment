@@ -38,3 +38,14 @@ def min_window_substring(s, t):
 s = "ADOBECODEBANC"
 t = "ABC"
 print(min_window_substring(s, t)) 
+
+
+
+def top_three_scores(scores):
+    scores = list(map(int, scores.split()))
+    return sorted(scores, reverse=True)[:3]
+
+# Example
+print(top_three_scores("50 90 85 70 80"))  # Output: [90, 85, 80]
+print(top_three_scores("10 20 30 40 50"))  # Output: [50, 40, 30]
+
